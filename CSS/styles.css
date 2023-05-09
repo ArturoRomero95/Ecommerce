@@ -1,0 +1,1103 @@
+/* etiquetas generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(22, 22, 52, 0.847);
+}
+html{
+    padding: 10%;
+}
+body{
+    min-height: 100vh;
+}
+
+
+/* Index*/
+
+
+#Tienda{
+    font-family: 'Vina Sans', cursive;
+    font-size: 600%;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(22, 22, 52, 0);
+}
+
+#Menu{
+    display: block;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(22, 22, 52);
+    font-family: 'Zilla Slab', serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#Menu ul li{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 1.5em;
+ }
+
+#MenuCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(22, 22, 52);
+    font-family: 'Zilla Slab', serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#MenuCart ul li{
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 1.5em;
+ }
+
+ .iconCart{
+    width: 40px;
+    margin: 20px auto;
+    stroke: white;
+ }
+
+ .iconCart :hover{
+    cursor: pointer;
+ }
+
+ .containerIcon{
+    position: relative;
+    padding-left: 5%;
+ }
+
+ .countProducts{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: white;
+    color: white;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+ }
+
+ #contadorProductos{
+    font-size: 12px;
+    background-color: white;
+    color: black;
+ }
+
+ .containerCartProducts{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+ }
+
+ .iconClose{
+    width: 17px;
+    height: 17px;
+    background-color: rgb(121, 40, 40);
+    color: white;
+ }
+
+ .iconClose :hover{
+    stroke: red;
+    cursor: pointer;
+ }
+
+ .cartProduct{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.20);
+    background-color: rgb(121, 40, 40);
+ }
+
+ .cartEmpty{
+    padding: 20px;
+    text-align: center;
+    color: rgb(193, 188, 188);
+    background-color: rgb(121, 40, 40);
+ }
+
+ .infoCartProduct{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;  
+    background-color: rgb(121, 40, 40);  
+ }
+
+
+ .tituloProductoCarrito{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(121, 40, 40);
+ }
+
+ .precioProductoCarrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(121, 40, 40);
+ }
+
+ .cantidadProductoCarrito{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(121, 40, 40);
+ }
+
+ .cartTotal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    background-color: rgb(121, 40, 40);
+ }
+
+ .cartTotal h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(121, 40, 40);
+ }
+
+ .cartTotal span{
+    background-color: rgb(121, 40, 40);
+    color: white;
+ }
+
+ .totalPagar{
+    font-size: 20px;
+    font-weight: 900;
+ }
+
+ .hiddenCart{
+    display: none;
+ }
+
+ .hidden{
+    display: none;
+ }
+
+
+.bienvenidaContainer{
+    text-align: center;
+    color: white;
+    background-color: rgb(121, 40, 40);
+    width: 50%;
+    padding: 4%;
+    margin: 3% auto;
+    border-radius: 30px;
+    box-shadow: 15px 15px 10px black;
+}
+
+.bienvenidaContainer h1{
+    font-family: 'Vina Sans', cursive;
+    font-weight: lighter;
+    font-size: 350%;
+    background-color: rgb(121, 40, 40);
+    margin-bottom: 5%;
+}
+
+.bienvenidaContainer p{
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(121, 40, 40);
+}
+
+.banner{
+    text-align: center;
+    background-color: rgba(22, 22, 52, 0);
+}
+
+.banner img{
+    border-width: 10px;
+    width: 70%;
+    background-color: rgb(121, 40, 40);
+    padding: 10px;
+}
+
+ .Comic{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Shadows Into Light', cursive;
+ }
+
+ .Comic img{
+    transition: all .5s;
+ }
+
+ .Comic:hover img{
+    transform: scale(1.1);
+ }
+
+ .titulo{
+    font-family: 'Zilla Slab', serif;
+    font-size: 5vh;
+    font-weight: bold;
+ }
+
+ .botonPop{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 70px;
+    height: 30px;
+    margin: 0 auto;
+ }
+
+ .botonPop:hover{
+    scale: .9;
+ }
+
+
+/*Batman Hush*/
+
+#BatmanHush{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "BatmanIMG Título0"
+        "BatmanIMG Formato0"
+        "BatmanIMG Anio0"
+        "BatmanIMG Autor0"
+        "BatmanIMG Costo0"
+        "BatmanIMG Boton0";
+}
+
+.BatmanIMG{ 
+    grid-area: BatmanIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título0{
+    grid-area: Título0;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato0{
+    grid-area: Formato0;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio0{
+    grid-area: Anio0;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor0{
+    grid-area: Autor0;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo0{
+    grid-area: Costo0;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton0{
+    grid-area: Buton0;
+}
+
+
+/*V for Vendetta*/
+
+#VVendetta{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "VendettaIMG Título1"
+        "VendettaIMG Formato1"
+        "VendettaIMG Anio1"
+        "VendettaIMG Autor1"
+        "VendettaIMG Costo1"
+        "VendettaIMG Buton1";
+}
+
+.VendettaIMG{ 
+    grid-area: VendettaIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título1{
+    grid-area: Título1;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato1{
+    grid-area: Formato1;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio1{
+    grid-area: Anio1;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor1{
+    grid-area: Autor1;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo1{
+    grid-area: Costo1;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton1{
+    grid-area: Buton1;
+}
+
+
+/*Death of Superman*/
+
+#DeathSuperman{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "SupermanIMG Título2"
+        "SupermanIMG Formato2"
+        "SupermanIMG Anio2"
+        "SupermanIMG Autor2"
+        "SupermanIMG Costo2"
+        "SupermanIMG Buton2";
+}
+
+.SupermanIMG{ 
+    grid-area: SupermanIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título2{
+    grid-area: Título2;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato2{
+    grid-area: Formato2;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio2{
+    grid-area: Anio2;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor2{
+    grid-area: Autor2;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo2{
+    grid-area: Costo2;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton2{
+    grid-area: Buton2;
+}
+
+
+/*Judas Contract*/
+
+#JudasContract{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "JudasIMG Título3"
+        "JudasIMG Formato3"
+        "JudasIMG Anio3"
+        "JudasIMG Autor3"
+        "JudasIMG Costo3"
+        "JudasIMG Buton3";
+}
+
+.JudasIMG{ 
+    grid-area: JudasIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título3{
+    grid-area: Título3;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato3{
+    grid-area: Formato3;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio3{
+    grid-area: Anio3;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor3{
+    grid-area: Autor3;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo3{
+    grid-area: Costo3;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton3{
+    grid-area: Buton3;
+}
+
+
+/*Watchmen*/
+
+
+#Watchmen{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "WatchmenIMG Título4"
+        "WatchmenIMG Formato4"
+        "WatchmenIMG Anio4"
+        "WatchmenIMG Autor4"
+        "WatchmenIMG Costo4"
+        "WatchmenIMG Buton4";
+}
+
+.WatchmenIMG{ 
+    grid-area: WatchmenIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título4{
+    grid-area: Título4;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato4{
+    grid-area: Formato4;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio4{
+    grid-area: Anio4;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor4{
+    grid-area: Autor4;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo4{
+    grid-area: Costo4;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton4{
+    grid-area: Buton4;
+}
+
+/*Dark Knight: Metal*/
+
+#DarkKnight{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "DarkIMG Título5"
+        "DarkIMG Formato5"
+        "DarkIMG Anio5"
+        "DarkIMG Autor5"
+        "DarkIMG Costo5"
+        "DarkIMG Boton5";
+}
+
+.DarkIMG{ 
+    grid-area: DarkIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título5{
+    grid-area: Título5;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato5{
+    grid-area: Formato5;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio5{
+    grid-area: Anio5;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor5{
+    grid-area: Autor5;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo5{
+    grid-area: Costo5;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton5{
+    grid-area: Buton5;
+}
+
+/*Killing Joke*/
+
+#KillingJoke{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "KillingIMG Título6"
+        "KillingIMG Formato6"
+        "KillingIMG Anio6"
+        "KillingIMG Autor6"
+        "KillingIMG Costo6"
+        "KillingIMG Boton6";
+}
+
+.KillingIMG{ 
+    grid-area: KillingIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título6{
+    grid-area: Título6;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato6{
+    grid-area: Formato6;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio6{
+    grid-area: Anio6;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor6{
+    grid-area: Autor6;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo6{
+    grid-area: Costo6;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton6{
+    grid-area: Buton6;
+}
+
+/*Long Halloween*/
+
+#LongHalloween{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "LongIMG Título7"
+        "LongIMG Formato7"
+        "LongIMG Anio7"
+        "LongIMG Autor7"
+        "LongIMG Costo7"
+        "LongIMG Boton7";
+}
+
+.LongIMG{ 
+    grid-area: LongIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título7{
+    grid-area: Título7;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato7{
+    grid-area: Formato7;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio7{
+    grid-area: Anio7;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor7{
+    grid-area: Autor7;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo7{
+    grid-area: Costo7;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton7{
+    grid-area: Buton7;
+}
+
+/*Last Kinght on Earth*/
+
+#LastKnight{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "LastIMG Título8"
+        "LastIMG Formato8"
+        "LastIMG Anio8"
+        "LastIMG Autor8"
+        "LastIMG Costo8"
+        "LastIMG Boton8";
+}
+
+.LastIMG{ 
+    grid-area: LastIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título8{
+    grid-area: Título8;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato8{
+    grid-area: Formato8;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio8{
+    grid-area: Anio8;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor8{
+    grid-area: Autor8;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo8{
+    grid-area: Costo8;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton8{
+    grid-area: Buton8;
+}
+
+/*Return of Superman*/
+
+#Return{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+        "ReturnIMG Título9"
+        "ReturnIMG Formato9"
+        "ReturnIMG Anio9"
+        "ReturnIMG Autor9"
+        "ReturnIMG Costo9"
+        "ReturnIMG Boton9";
+}
+
+.ReturnIMG{ 
+    grid-area: ReturnIMG;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(121, 40, 40);
+    justify-self: center;
+}
+
+#Título9{
+    grid-area: Título9;
+    color: whitesmoke;    
+    align-self: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#Formato9{
+    grid-area: Formato9;
+    color: whitesmoke;
+    align-self: flex-end;
+    font-size: 1.5em;
+}
+
+#Anio9{
+    grid-area: Anio9;
+    color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#Autor9{
+    grid-area: Autor9;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+#Costo9{
+    grid-area: Costo9;
+    color: whitesmoke;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+.Boton9{
+    grid-area: Buton9;
+}
+
+
+
+/* Botones votacion*/
+
+.p1{
+    text-align: center;
+    color: white;
+    background-color: rgb(121, 40, 40);
+    width: 50%;
+    padding: 4%;
+    margin: 3% auto;
+    border-radius: 30px;
+    box-shadow: 15px 15px 10px black;
+    font-family: 'Zilla Slab', serif;
+}
+
+.p1 p{
+    background-color: rgb(121, 40, 40);
+}
+
+.votacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20%;
+    color: whitesmoke; 
+    background-color: rgba(22, 22, 52, 0);  
+}
+
+.votacion div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(22, 22, 52, 0);
+}
+
+.votacion div img{
+    width: 90%;
+}
+
+.votacion div button{
+    background-color: rgb(121, 40, 40);
+    margin: 5% auto;
+    color: white;
+    font-family: 'Zilla Slab', serif;
+}
+
+
+/*Formulario*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(22, 22, 52, 0);
+}
+
+.formulario p{
+    font-size: 250%;
+    font-family: 'Vina Sans', cursive;
+    margin: 2%;
+    color: white;
+    background-color: rgba(22, 22, 52, 0);
+}
+
+.formulario form{
+    background-color: rgba(22, 22, 52, 0);
+}
+
+.formulario input{
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   margin: 10px auto;
+   background-color: rgba(22, 22, 52, 0);
+   color: white;
+   font-family: 'Vina Sans', cursive;
+   font-size: 120%;
+   border: solid white 2px;
+}
+
+#enviar{
+    background-color: rgb(121, 40, 40);
+    align-items: center;
+    border-color: rgb(121, 40, 40);
+    width: 15%;
+}
+
+
+#resultado{
+    background-color: rgba(22, 22, 52, 0);
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#resultado h1{
+    background-color: rgb(121, 40, 40);
+    font-family: 'Shadows Into Light', cursive;
+    padding-top: 3%;
+}
+
+#resultado p{
+    background-color: rgb(121, 40, 40);
+    font-family: 'Zilla Slab', serif;
+    padding-bottom: 3%;
+}
+
+.swal2-title{
+    background-color: white;
+    font-family: 'Vina Sans', cursive;
+    font-size: 50px;
+    color: rgb(121, 40, 40);
+}
+
+.swal2-html-container{
+    background-color: white;
+    font-family: 'Zilla Slab', serif;
+    color: rgb(121, 40, 40);
+}
+
+.swal2-actions{
+    background-color: white;
+    font-family: 'Zilla Slab', serif;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring{
+    background-color: rgba(0, 128, 0, 0.274);
+}

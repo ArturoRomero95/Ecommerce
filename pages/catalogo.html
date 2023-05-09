@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de CSS-->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../vendor/vegas/vegas.min.css">
+    <!--link de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Vina+Sans&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Catálogo / Chenson's Cómics</title>
+</head>
+<body>
+
+    <div id="Tienda"></div>
+
+    <div id="MenuCart">
+        <ul>
+            <a id="inicio" href="../index.html">
+
+            </a>
+            <a id="catalogo" href="../pages/catalogo.html">
+
+            </a>
+            <a id="votaciones" href="../pages/votaciones.html">
+
+            </a>
+        </ul>
+
+        <div class="containerIcon">
+
+            <div class="containerCartIcon">
+            
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="iconCart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+
+                <div class="countProducts">
+
+                    <span id="contadorProductos">0</span>
+
+                </div>
+
+            </div>
+
+            <div class="containerCartProducts hiddenCart">
+
+                <div class="rowProduct hidden">
+
+                    <div class="cartProduct">
+
+                        <div class="infoCartProduct">
+    
+                            <span class="cantidadProductoCarrito"></span>
+    
+                            <p class="tituloProductoCarrito"></p>
+    
+                            <span class="precioProductoCarrito"></span>
+    
+                        </div>
+    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="iconClose">
+    
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    
+                        </svg>
+                          
+                    </div>
+
+                </div>
+
+                <div class="cartTotal hideen">
+                    <h3>Total</h3>
+                    <span class="totalPagar">$0</span>
+                </div>
+
+                <p class="cartEmpty">El carrito está vacío</p>
+
+            </div>
+
+              
+        </div>
+    </div>
+
+    <div class="comicContainer">
+
+        <div class="Comic" id="BatmanHush">
+
+            <img src="../imgs/BatmanHush-cover.jpg" alt="Portada de Batman Hush" class="BatmanIMG">
+
+            <p class="titulo Comic" id="Título0">Batman Hush</p>
+            
+            <p class="formato Comic" id="Formato0">Cartoné</p>
+
+            <p class="anio Comic" id="Anio0">2002</p>
+    
+            <p class="autor Comic" id="Autor0">Jeph Loeb</p>
+
+            <p class="costo Comic" id="Costo0">$300</p>
+
+            <input class="botonPop" id="Boton0" type="button" value="Comprar">
+
+        </div>
+
+        <div class="Comic" id="VVendetta">
+
+            <img src="../imgs/VVendetta-cover.jpg" alt="Portada de V for Vendetta" class="VendettaIMG">
+
+            <p class="titulo Comic" id="Título1">V for Vendetta</p>
+
+            <p class="formato Comic" id="Formato1">Pasta blanda</p>
+
+            <p class="anio Comic" id="Anio1">1980</p>
+    
+            <p class="autor Comic" id="Autor1">Alan Moore</p>
+
+            <p class="costo Comic" id="Costo1">$350</p>
+
+            <input class="botonPop" id="Boton1" type="button" value="Comprar">
+            
+        </div>
+
+
+        <div class="Comic" id="DeathSuperman">
+
+            <img src="../imgs/DeathSuperman-cover.jpg" alt="Portada de Death of Superman" class="SupermanIMG">
+
+            <p class="titulo Comic" id="Título2">Death of Superman</p>
+
+            <p class="formato Comic" id="Formato2">Cartone</p>
+
+            <p class="anio Comic" id="Anio2">1992</p>
+    
+            <p class="autor Comic" id="Autor2">Louis Simonson</p>
+
+            <p class="costo Comic" id="Costo2">$200</p>
+
+            <input class="botonPop" id="Boton2" type="button" value="Comprar">
+            
+        </div>
+
+
+        <div class="Comic" id="JudasContract">
+
+            <img src="../imgs/JudasContract-cover.jpg" alt="Portada de Judas Contract" class="JudasIMG">
+
+            <p class="titulo Comic" id="Título3">Judas Contract</p>
+
+            <p class="formato Comic" id="Formato3">Cartone</p>
+
+            <p class="anio Comic" id="Anio3">1984</p>
+    
+            <p class="autor Comic" id="Autor3">Marv Wolfman</p>
+
+            <p class="costo Comic" id="Costo3">$200</p>
+
+            <input class="botonPop" id="Boton3" type="button" value="Comprar">
+            
+        </div>
+
+
+        <div class="Comic" id="Watchmen">
+
+            <img src="../imgs/Watchmen-cover.jpg" alt="Portada de Watchmen" class="WatchmenIMG">
+
+            <p class="titulo Comic" id="Título4">Watchmen</p>
+
+            <p class="formato Comic" id="Formato4">Pasta blanda</p>
+
+            <p class="anio Comic" id="Anio4">1986</p>
+    
+            <p class="autor Comic" id="Autor4">Alan Moore</p>
+
+            <p class="costo Comic" id="Costo4">$350</p>
+
+            <input class="botonPop" id="Boton4" type="button" value="Comprar">
+            
+        </div>
+
+        <div class="Comic" id="DarkKnight">
+
+            <img src="../imgs/DarkKnight-cover.jpg" alt="Portada de Dark Knight Metal" class="DarkIMG">
+
+            <p class="titulo Comic" id="Título5">Dark Knights: Metal</p>
+
+            <p class="formato Comic" id="Formato5">Cartone</p>
+
+            <p class="anio Comic" id="Anio5">2018</p>
+    
+            <p class="autor Comic" id="Autor5">Scott Snyder</p>
+
+            <p class="costo Comic" id="Costo5">$300</p>
+
+            <input class="botonPop" id="Boton5" type="button" value="Comprar">
+            
+        </div>
+
+        <div class="Comic" id="KillingJoke">
+
+            <img src="../imgs/KillingJoke-cover.jpg" alt="Portada de Killing Joke" class="KillingIMG">
+
+            <p class="titulo Comic" id="Título6">The Killing Joke</p>
+
+            <p class="formato Comic" id="Formato6">Cartone</p>
+
+            <p class="anio Comic" id="Anio6">1988</p>
+    
+            <p class="autor Comic" id="Autor6">Alan Moore</p>
+
+            <p class="costo Comic" id="Costo6">$250</p>
+
+            <input class="botonPop" id="Boton6" type="button" value="Comprar">
+            
+        </div>
+
+        <div class="Comic" id="LongHalloween">
+
+            <img src="../imgs/LongHalloween-cover.jpg" alt="Portada de Long Halloween" class="LongIMG">
+
+            <p class="titulo Comic" id="Título7">The Long Halloween</p>
+
+            <p class="formato Comic" id="Formato7">Pasta blanda</p>
+
+            <p class="anio Comic" id="Anio7">1996</p>
+    
+            <p class="autor Comic" id="Autor7">Jeph Loeb</p>
+
+            <p class="costo Comic" id="Costo7">$350</p>
+
+            <input class="botonPop" id="Boton7" type="button" value="Comprar">
+            
+        </div>
+
+        <div class="Comic" id="LastKnight">
+
+            <img src="../imgs/LastKnight-cover.jpg" alt="Portada de Last Kinght on Earth" class="LastIMG">
+
+            <p class="titulo Comic" id="Título8">Last Knight on Earth</p>
+
+            <p class="formato Comic" id="Formato8">Pasta blanda</p>
+
+            <p class="anio Comic" id="Anio8">2020</p>
+    
+            <p class="autor Comic" id="Autor8">Scott Snyder</p>
+
+            <p class="costo Comic" id="Costo8">$300</p>
+
+            <input class="botonPop" id="Boton8" type="button" value="Comprar">
+            
+        </div>
+
+        <div class="Comic" id="Return">
+
+            <img src="../imgs/ReturnSuperman-cover.jpg" alt="Portada de Return os Superman" class="ReturnIMG">
+
+            <p class="titulo Comic" id="Título9">Return of Superman</p>
+
+            <p class="formato Comic" id="Formato9">Cartone</p>
+
+            <p class="anio Comic" id="Anio9">1993</p>
+    
+            <p class="autor Comic" id="Autor9">Louis Simonson</p>
+
+            <p class="costo Comic" id="Costo9">$300</p>
+
+            <input class="botonPop" id="Boton9" type="button" value="Comprar">
+            
+        </div>
+
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../vendor/vegas/vegas.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/background.js"></script>
+</html>

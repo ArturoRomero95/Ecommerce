@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de CSS-->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../vendor/vegas/vegas.min.css">
+    <!--link de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Vina+Sans&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Buscador / Chenson's Cómics</title>
+</head>
+<body>
+
+    <div id="Tienda"></div>
+
+    <div id="Menu">
+        <ul>
+            <a id="inicio" href="../index.html">
+
+            </a>
+            <a id="catalogo" href="../pages/catalogo.html">
+
+            </a>
+            <a id="votaciones" href="../pages/votaciones.html">
+
+            </a>
+        </ul>
+    </div>
+
+    <div class="p1">
+        <p>Te invitamos a elegir cuál quieres que sea el siguiente titulo que tengamos en venta.</p> 
+        <p> El cómic que tenga más votos, estará disponible proximamente. </p>
+    </div>
+   
+
+    <div class="votacion">    
+
+        <div class="Injustice">
+            <img src="../imgs/Injustice-cover.jpg" alt="Portada de Injustice" class="InjusticeIMG">
+            <button class="boton" id="votacion1"> VOTAR </button>
+        </div>
+        
+        <div class="Kingdom">
+            <img src="../imgs/Kingdom Come-cover.jpg" alt="Portada de Kingdom Come" class="KingdomIMG">
+            <button class="boton" id="votacion2"> VOTAR </button>
+        </div>
+    
+    </div>
+
+
+
+    <div class="formulario">
+
+        <p>Busca tu comic favorito</p>
+
+        <form id="formulario1" action="/action_page.php">
+            <input type="text" placeholder="Titulo">
+            <input type="text" placeholder="Autor">
+            <input type="text" placeholder="Formato">
+            <input type="submit" value="Enviar Datos" id="enviar">
+        </form>
+
+    </div>
+
+    <div id="resultado"></div>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="../vendor/vegas/vegas.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/background.js"></script>
+<script src="../js/buscador.js"></script>
+</html>
